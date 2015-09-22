@@ -1,11 +1,11 @@
 <idea-plugin version="2">
-  <id>com.yourcompany.unique.plugin.id</id>
-  <name>Plugin display name here</name>
+  <id>com.github.kraii.intellj-fixed-width-replacer</id>
+  <name>Textreplacerizer</name>
   <version>1.0</version>
   <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
 
   <description><![CDATA[
-      Enter short description for your plugin here.<br>
+     Usless Thing<br>
       <em>most HTML tags may be used</em>
     ]]></description>
 
@@ -38,8 +38,8 @@
 
   <actions>
     <!-- Add your actions here -->
-    <action id="Replace-Text-With-Spaces" class="com.github.kraii.intellij.textreplacer.TextReplaceAction" text="Replace Text with spaces"
-            description="Replace selected text with spaces" keymap="ctrl alt NUMPAD5"/>
+    <action id="ReplaceTextWithSpaces" class="com.github.kraii.intellij.textreplacer.TextReplaceAction" text="Replace Text with spaces"
+            description="Replace selected text with spaces" keymap="ctrl alt NUMPAD-5"/>
   </actions>
 
 </idea-plugin>

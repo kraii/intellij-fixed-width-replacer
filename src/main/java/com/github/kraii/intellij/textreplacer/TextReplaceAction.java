@@ -9,15 +9,18 @@ import com.intellij.openapi.editor.Document;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.SelectionModel;
 import org.jetbrains.annotations.NotNull;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class TextReplaceAction extends AnAction {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(TextReplaceAction.class);
     private static final int START_OF_STRING = 0;
 
     @Override
     public void actionPerformed(AnActionEvent anActionEvent) {
+        LOGGER.debug("Yo");
         Editor editor = DataKeys.EDITOR.getData(anActionEvent.getDataContext());
-
         if (editor != null) {
             SelectionModel selectionModel = editor.getSelectionModel();
             String selectedText = selectionModel.getSelectedText();
